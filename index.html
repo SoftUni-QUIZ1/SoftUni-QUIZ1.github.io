@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Quiz</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css"
+        integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link rel="stylesheet" href="/static/site.css">
+
+
+    <!-- Start Single Page Apps for GitHub Pages -->
+    <script type="text/javascript">
+        // Single Page Apps for GitHub Pages
+        // MIT License
+        // https://github.com/rafgraph/spa-github-pages
+        // This script checks to see if a redirect is present in the query string,
+        // converts it back into the correct url and adds it to the
+        // browser's history using window.history.replaceState(...),
+        // which won't cause the browser to attempt to load the new url.
+        // When the single page app is loaded further down in this file,
+        // the correct url will be waiting in the browser's history for
+        // the single page app to route accordingly.
+        (function(l) {
+          if (l.search[1] === '/' ) {
+            var decoded = l.search.slice(1).split('&').map(function(s) { 
+              return s.replace(/~and~/g, '&')
+            }).join('?');
+            window.history.replaceState(null, null,
+                l.pathname.slice(0, -1) + decoded + l.hash
+            );
+          }
+        }(window.location))
+      </script>
+      <!-- End Single Page Apps for GitHub Pages -->
+
+    <script src="/src/app.js" type="module"></script>
+</head>
+
+<body>
+
+    <div id="container">
+
+        <header id="titlebar">
+            <nav>
+                <a class="logotype" href="/"><i class="fas fa-question-circle"></i><i
+                        class="merge fas fa-check-circle"></i><span>Quiz Fever</span></a>
+                <div class="navigation">
+                    <a class="nav-link" href="/browse">Browse</a>
+                    <div id="user-nav">
+                        <a class="nav-link" href="/create">Create</a>
+                        <a class="nav-link profile-link" href="/profile"><i class="fas fa-user-circle"></i></a>
+                        <a id="logoutBtn" class="nav-link" href="/logout">Logout</a>
+                    </div>
+                    <div id="guest-nav">
+                        <a class="nav-link" href="/login">Sign in</a>
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <main id="content">
+           
+        </main>
+
+        <footer id="footer">Viktor Kostadinov &copy; 2021</footer>
+
+
+
+    </div>
+
+
+
+</body>
+
+</html>
